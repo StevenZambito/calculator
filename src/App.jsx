@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
+import { Calculator } from './Calculator.js'
 
 export function App() {
   return (
@@ -22,13 +23,7 @@ export function App() {
       </header>
       <Switch>
         <Route exact path="/">
-          Home
-        </Route>
-        <Route exact path="/1">
-          Page 1
-        </Route>
-        <Route exact path="/2">
-          Page 2
+          <Calculator />
         </Route>
         <Route path="*">Not Found</Route>
       </Switch>
