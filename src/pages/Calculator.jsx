@@ -25,59 +25,31 @@ export const Calculator = () => {
         </div>
 
         <div className="row">
-          <Button
-            onButtonClick={handleButtonPress}
-            content="Clear"
-            type="function"
-          />
-          <Button
-            onButtonClick={handleButtonPress}
-            content="÷"
-            type="operator"
-          />
+          <Button onClick={handleButtonPress} content="Clear" type="function" />
+          <Button onClick={handleButtonPress} content="÷" type="operator" />
         </div>
         <div className="row">
           <Button onClick={() => handleButtonPress(7)} content={7} />
-          <Button onButtonClick={handleButtonPress} content={8} />
-          <Button onButtonClick={handleButtonPress} content={9} />
-          <Button
-            onButtonClick={handleButtonPress}
-            content="x"
-            type="operator"
-          />
+          <Button onClick={() => handleButtonPress(8)} content={8} />
+          <Button onClick={() => handleButtonPress(9)} content={9} />
+          <Button onClick={handleButtonPress} content="x" type="operator" />
         </div>
         <div className="row">
-          <Button onButtonClick={handleButtonPress} content={4} />
-          <Button onButtonClick={handleButtonPress} content={5} />
-          <Button onButtonClick={handleButtonPress} content={6} />
-          <Button
-            onButtonClick={handleButtonPress}
-            content="-"
-            type="operator"
-          />
+          <Button onClick={() => handleButtonPress(4)} content={4} />
+          <Button onClick={() => handleButtonPress(5)} content={5} />
+          <Button onClick={() => handleButtonPress(6)} content={6} />
+          <Button onClick={handleButtonPress} content="-" type="operator" />
         </div>
         <div className="row">
-          <Button onButtonClick={handleButtonPress} content={1} />
-          <Button onButtonClick={handleButtonPress} content={2} />
-          <Button onButtonClick={handleButtonPress} content={3} />
-          <Button
-            onButtonClick={handleButtonPress}
-            content="+"
-            type="operator"
-          />
+          <Button onClick={() => handleButtonPress(1)} content={1} />
+          <Button onClick={() => handleButtonPress(2)} content={2} />
+          <Button onClick={() => handleButtonPress(3)} content={3} />
+          <Button onClick={handleButtonPress} content="+" type="operator" />
         </div>
         <div className="row">
-          <Button
-            onButtonClick={handleButtonPress}
-            content={0}
-            isLarge={true}
-          />
-          <Button onButtonClick={handleButtonPress} content="." />
-          <Button
-            onButtonClick={handleButtonPress}
-            content="="
-            type="operator"
-          />
+          <Button onClick={handleButtonPress} content={0} isLarge={true} />
+          <Button onClick={handleButtonPress} content="." />
+          <Button onClick={handleButtonPress} content="=" type="operator" />
         </div>
       </div>
     </div>
