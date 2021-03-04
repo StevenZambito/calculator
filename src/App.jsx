@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
-import { Calculator } from './Calculator.js'
+import { Calculator } from './pages/Calculator.jsx'
 
 export function App() {
   return (
     <>
-      <header>
+      {/* <header>
         <h1>Welcome to my SPA</h1>
         <nav>
           <ul>
@@ -20,7 +20,7 @@ export function App() {
             </li>
           </ul>
         </nav>
-      </header>
+      </header> */}
       <Switch>
         <Route exact path="/">
           <Calculator />

@@ -8,5 +8,86 @@ html {
 
 body {
   margin: 0;
-  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url(https://i.pinimg.com/originals/00/f5/8b/00f58b6aaecdaa18febc54a28f294697.jpg);
+}
+
+.calc-button {
+  flex: 1;
+  color: #49e819;
+  font-size: 35px;
+  padding: 10px 22.5px;
+  background-color: black;
+  border: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.calc-button:focus {
+  outline: 0;
+}
+
+.calc-button:hover {
+  cursor: pointer;
+  background: #49e819;
+  color: black;
+}
+
+.large-button {
+  flex: 4;
+}
+
+.calculator-shell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  animation: glow 3s infinite alternate;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #49e819;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #49e819;
+  }
+}
+
+.screen-section {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  flex: 1;
+  background-color: #49e819;
+  animation: glowing 9000ms infinite;
+}
+
+.screen {
+  margin: 0;
+  font-size: 50px;
+  color: black;
+  padding: 10px;
 }
